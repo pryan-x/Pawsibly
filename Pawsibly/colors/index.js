@@ -1,0 +1,5 @@
+export const Primary = '#212121'
+export const Secondary = '#26a69a'
+export const Background = '#484848'
+export const Accent = '#80cbc4'
+export const White = '#f5f5f5'

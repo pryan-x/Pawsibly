@@ -7,7 +7,8 @@ import {
     Image,
     RefreshControl,
     Platform,
-    TouchableOpacity
+    TouchableOpacity,
+    AsyncStorage
 } from 'react-native'
 import { White, Primary, Background, Accent } from '../../colors'
 import LoginRegisterInput from '../../components/shared/LoginRegisterInput'
@@ -19,7 +20,8 @@ export default class Login extends Component {
         password: '',
         confirmPassword: '',
         loginToggled: false,
-        error: false
+        error: false,
+        user: {}
     }
 
     handleTextChange = (name, value) => {
@@ -31,14 +33,24 @@ export default class Login extends Component {
     }
 
     handleLogin = async () => {
-        if (this.state.username.length >= 3 && this.state.password.length >= 3) {
-            const resp = await LoginMethod(this.state.username, this.state.password)
-            console.log(resp.data)
-            if(resp.status === 201) {
-                this.props.navigation.navigate('ProfileSettings')
+        const resp = await LoginMethod(this.state.username, this.state.password)
+        if (resp) {
+            try {
+                await AsyncStorage.setItem('userToken', resp.data.token)
+                .then(
+                await AsyncStorage.setItem('userData', resp.data.user)
+                ).then(
+                this.setState({ user: resp.data.user })
+                ).finally(
+                this.props.navigation.navigate('Home')
+                );
+            } catch (error) {
+                console.log(error)
             }
         }
+
     }
+
 
     handleRegister = async () => {
         if (this.state.username.length >= 3 && this.state.password.length >= 3) {
@@ -52,6 +64,8 @@ export default class Login extends Component {
     handleToggle = () => {
         this.state.loginToggled === false ? this.setState({ loginToggled: true, error: false, username: '', password: '' }) : this.setState({ loginToggled: false, error: false, username: '', password: '' })
     }
+
+
 
     renderLogin = () => {
         if (this.state.loginToggled === false) {
@@ -138,7 +152,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: Primary
-      },
+    },
     button: {
         alignSelf: 'stretch',
         alignItems: 'center',

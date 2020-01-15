@@ -17,9 +17,8 @@ class UsersController < ApplicationController
   end
 
   def register
-    pp params
+    puts params
     @user = User.new(user_params)
-    
     if @user.save
       render json: @user, status: :created, location: @user
     else
@@ -28,12 +27,14 @@ class UsersController < ApplicationController
   end
   
   def login
+    puts params
+    # puts params[:password]
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
       token = create_token(@user.id, @user.username)
       render status: 200, json: { token: token, user: @user }
     else
-      render status: 401, json: { message: "Unauthorized" }
+      render status: 401, json: { status: 401, message: "Unauthorized" }
     end
   end
 

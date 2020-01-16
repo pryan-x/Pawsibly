@@ -1682,3 +1682,1779 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 2252ms (Views: 981.4ms | ActiveRecord: 0.0ms | Allocations: 1628)
 
 
+Started POST "/users/login" for ::1 at 2020-01-15 16:54:38 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (33.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 401 Unauthorized in 758ms (Views: 127.3ms | ActiveRecord: 34.1ms | Allocations: 814)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 16:54:58 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 659ms (Views: 38.2ms | ActiveRecord: 1.1ms | Allocations: 962)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 16:59:58 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (53.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 563ms (Views: 29.8ms | ActiveRecord: 53.6ms | Allocations: 963)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:06:26 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (91.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 1284ms (Views: 31.4ms | ActiveRecord: 93.5ms | Allocations: 1055)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:14:50 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (51.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 711ms (Views: 9.2ms | ActiveRecord: 53.3ms | Allocations: 1054)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:27:35 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (36.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 785ms (Views: 15.6ms | ActiveRecord: 39.3ms | Allocations: 1053)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:34:35 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (19.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 933ms (Views: 8.1ms | ActiveRecord: 96.5ms | Allocations: 1052)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:38:16 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (72.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 528ms (Views: 13.8ms | ActiveRecord: 72.6ms | Allocations: 970)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:39:33 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (228.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 1014ms (Views: 5.9ms | ActiveRecord: 228.0ms | Allocations: 966)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:47:32 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (15.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 459ms (Views: 11.0ms | ActiveRecord: 16.9ms | Allocations: 1051)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:48:31 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 433ms (Views: 23.0ms | ActiveRecord: 1.4ms | Allocations: 962)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 17:48:46 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 394ms (Views: 3.7ms | ActiveRecord: 0.6ms | Allocations: 962)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:12:51 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"pil", "password"=>"[FILTERED]", "user"=>{"username"=>"pil"}}
+  [1m[36mUser Load (19.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "pil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 401 Unauthorized in 57ms (Views: 6.0ms | ActiveRecord: 19.8ms | Allocations: 776)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:13:01 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (64.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 593ms (Views: 17.6ms | ActiveRecord: 64.1ms | Allocations: 962)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:14:21 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (49.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 492ms (Views: 7.4ms | ActiveRecord: 49.1ms | Allocations: 964)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:22:08 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (58.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 569ms (Views: 3.1ms | ActiveRecord: 58.5ms | Allocations: 1053)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:22:31 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 603ms (Views: 9.5ms | ActiveRecord: 3.7ms | Allocations: 964)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:25:04 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (12.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 439ms (Views: 12.9ms | ActiveRecord: 12.5ms | Allocations: 963)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:40:39 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (32.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 900ms (Views: 42.1ms | ActiveRecord: 33.4ms | Allocations: 1052)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:41:47 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (35.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 489ms (Views: 10.7ms | ActiveRecord: 35.9ms | Allocations: 963)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 18:42:18 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (27.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 458ms (Views: 18.9ms | ActiveRecord: 27.3ms | Allocations: 971)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 19:26:52 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (13.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 526ms (Views: 58.3ms | ActiveRecord: 14.6ms | Allocations: 1052)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 19:29:06 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (80.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 564ms (Views: 22.3ms | ActiveRecord: 80.6ms | Allocations: 962)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 21:08:19 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (48.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 1144ms (Views: 52.4ms | ActiveRecord: 50.9ms | Allocations: 1054)
+
+
+Started POST "/users/login" for ::1 at 2020-01-15 21:50:16 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (31.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 851ms (Views: 122.2ms | ActiveRecord: 32.1ms | Allocations: 1055)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 00:23:47 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (626.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 3078ms (Views: 195.0ms | ActiveRecord: 634.3ms | Allocations: 1057)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 01:08:32 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (22.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 795ms (Views: 40.1ms | ActiveRecord: 23.4ms | Allocations: 1054)
+
+
+  [1m[35m (27.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6286293722172414930)[0m
+  [1m[35m (66.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeStringToIntegerInUsers (20200116061204)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (244.3ms)[0m  [1m[35mALTER TABLE "users" ALTER COLUMN "location_range" TYPE integer[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6286293722172414930)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6286293722172414930)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeStringToIntegerInUsers (20200116061204)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (199.2ms)[0m  [1m[35mALTER TABLE "users" ALTER COLUMN "location_range" TYPE integer USING CAST(location_range AS integer)[0m
+  [1m[36mprimary::SchemaMigration Create (24.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200116061204"]]
+  [1m[35m (902.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (16.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6286293722172414930)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6286293722172414930)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeStringToArrayInUsers (20200116061752)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (63.2ms)[0m  [1m[35mALTER TABLE "users" ALTER COLUMN "gender" TYPE varchar[] USING (string_to_array(gender, ','))[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200116061752"]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6286293722172414930)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6286293722172414930)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeStringToArrayInUsers (20200116061752)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6286293722172414930)[0m
+Started POST "/users/login" for ::1 at 2020-01-16 01:30:33 -0500
+  [1m[35m (17.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (35.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 831ms (Views: 3.4ms | ActiveRecord: 261.7ms | Allocations: 6969)
+
+
+Started POST "/users/2" for ::1 at 2020-01-16 01:32:00 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:32:10 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:32:19 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:33:44 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:34:32 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:34:37 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:34:43 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:34:46 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:34:49 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:37:11 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:38:03 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:40:08 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:40:12 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:40:38 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:40:54 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-01-16 01:41:54 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alejandrarossetti/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alejandrarossetti/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 47.5ms | Allocations: 189)
+Completed 200 OK in 63ms (Views: 55.8ms | ActiveRecord: 0.0ms | Allocations: 884)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-01-16 01:41:56 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/1" for ::1 at 2020-01-16 01:42:03 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+...   render json: { @user.errors, status: 401, message: "Unaut...
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+... 401, message: "Unauthorized" }
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+Started POST "/users/2" for ::1 at 2020-01-16 01:43:33 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/2" for ::1 at 2020-01-16 01:43:48 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+...   render json: { @user.errors, status: 401, message: "Unaut...
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+... 401, message: "Unauthorized" }
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/2" for ::1 at 2020-01-16 01:43:55 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+...   render json: { @user.errors, status: 401, message: "Unaut...
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+... 401, message: "Unauthorized" }
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+Started POST "/users/2" for ::1 at 2020-01-16 01:44:26 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/2" for ::1 at 2020-01-16 01:44:26 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PUT "/users/2" for ::1 at 2020-01-16 01:45:33 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+...   render json: { @user.errors, status: 401, message: "Unaut...
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+... 401, message: "Unauthorized" }
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+Started PUT "/users/2" for ::1 at 2020-01-16 01:57:39 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+...   render json: { @user.errors, status: 401, message: "Unaut...
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+... 401, message: "Unauthorized" }
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+Started PUT "/users/2" for ::1 at 2020-01-16 01:58:46 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+...   render json: { @user.errors, status: 401, message: "Unaut...
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+... 401, message: "Unauthorized" }
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+Started PUT "/users/2" for ::1 at 2020-01-16 02:00:31 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+...   render json: { @user.errors, status: 401, message: "Unaut...
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+... 401, message: "Unauthorized" }
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:47: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:47: syntax error, unexpected '}', expecting end
+app/controllers/users_controller.rb:82: syntax error, unexpected end-of-input, expecting end
+Started PUT "/users/2" for ::1 at 2020-01-16 02:01:18 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "id"=>"2", "user"=>{"location_range"=>10}}
+  [1m[36mUser Load (18.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:59:in `set_user'
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 198ms (Views: 11.0ms | ActiveRecord: 614.2ms | Allocations: 5997)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 02:01:39 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (34.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 487ms (Views: 7.8ms | ActiveRecord: 34.3ms | Allocations: 1125)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:02:25 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "id"=>"2", "user"=>{"location_range"=>10}}
+  [1m[36mUser Load (1246.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:59:in `set_user'
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 1267ms (Views: 2.6ms | ActiveRecord: 1246.3ms | Allocations: 714)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:06:06 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "id"=>"2", "user"=>{"location_range"=>10}}
+  [1m[36mUser Load (138.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:59:in `set_user'
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (42.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:44:in `update'
+  [1m[36mUser Update (463.2ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 10], ["updated_at", "2020-01-16 07:06:07.777555"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:44:in `update'
+  [1m[35m (30.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:44:in `update'
+Completed 200 OK in 950ms (Views: 6.6ms | ActiveRecord: 676.6ms | Allocations: 4106)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:06:51 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>43, "gender"=>["male", "female"], "id"=>"2", "user"=>{"gender"=>["male", "female"], "location_range"=>43}}
+  [1m[36mUser Load (195.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:59:in `set_user'
+  [1m[36mUser Load (16.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :gender, :id, :user[0m
+  [1m[35m (26.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:44:in `update'
+  [1m[36mUser Update (95.2ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 43], ["updated_at", "2020-01-16 07:06:52.281454"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:44:in `update'
+  [1m[35m (25.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:44:in `update'
+Completed 200 OK in 512ms (Views: 10.6ms | ActiveRecord: 359.2ms | Allocations: 3828)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 02:08:04 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (80.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `login'
+Completed 200 OK in 495ms (Views: 4.8ms | ActiveRecord: 80.3ms | Allocations: 964)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:10:12 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:63: syntax error, unexpected ')', expecting =>
+...p, gender: [], :location_range)
+...                              ^
+/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/users_controller.rb:81: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:63: syntax error, unexpected ')', expecting =>
+app/controllers/users_controller.rb:81: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:63: syntax error, unexpected ')', expecting =>
+app/controllers/users_controller.rb:81: syntax error, unexpected end-of-input, expecting end
+Started PUT "/users/2" for ::1 at 2020-01-16 02:11:47 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>63, "gender"=>["male", "female"], "id"=>"2", "user"=>{"gender"=>["male", "female"], "location_range"=>63}}
+  [1m[36mUser Load (26.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (7.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (32.2ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 63], ["gender", "{}"], ["updated_at", "2020-01-16 07:11:48.983387"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (31.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 256ms (Views: 2.2ms | ActiveRecord: 424.8ms | Allocations: 9172)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:12:25 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "gender"=>["male", "female"], "id"=>"2", "user"=>{"gender"=>["male", "female"], "location_range"=>10}}
+  [1m[36mUser Load (14.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (26.8ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 10], ["updated_at", "2020-01-16 07:12:25.822154"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 270ms (Views: 1.3ms | ActiveRecord: 123.4ms | Allocations: 9111)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 02:13:24 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 491ms (Views: 4.2ms | ActiveRecord: 4.1ms | Allocations: 1062)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 02:14:49 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (18.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 713ms (Views: 10.8ms | ActiveRecord: 18.6ms | Allocations: 960)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 02:15:32 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 386ms (Views: 3.2ms | ActiveRecord: 1.1ms | Allocations: 952)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:19:07 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "gender"=>["male", "female"], "id"=>"2", "user"=>{"gender"=>["male", "female"], "location_range"=>10}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+Completed 200 OK in 78ms (Views: 2.1ms | ActiveRecord: 328.3ms | Allocations: 7142)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:19:40 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>84, "id"=>"2", "user"=>{"location_range"=>84}}
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (53.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (53.7ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 84], ["updated_at", "2020-01-16 07:19:40.275201"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (31.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 296ms (Views: 12.1ms | ActiveRecord: 147.3ms | Allocations: 3843)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:19:51 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>91, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>91}}
+  [1m[36mUser Load (20.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (20.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (8.9ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 91], ["updated_at", "2020-01-16 07:19:51.893214"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (20.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 133ms (Views: 0.8ms | ActiveRecord: 70.2ms | Allocations: 3876)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:20:41 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>40, "gender"=>["male", "female"], "id"=>"2", "user"=>{"gender"=>["male", "female"], "location_range"=>40}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 40], ["updated_at", "2020-01-16 07:20:42.498719"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 72ms (Views: 2.3ms | ActiveRecord: 45.3ms | Allocations: 9137)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:22:14 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>106, "gender"=>["male", "female"], "id"=>"2", "user"=>{"gender"=>["male", "female"], "location_range"=>106}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (16.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (49.2ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 106], ["gender", "{male,female}"], ["updated_at", "2020-01-16 07:22:15.482836"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (14.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 150ms (Views: 1.0ms | ActiveRecord: 145.5ms | Allocations: 9175)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 02:22:34 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (11.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 397ms (Views: 2.8ms | ActiveRecord: 11.6ms | Allocations: 1075)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:39:06 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>77, "gender"=>["male", "female"], "id"=>"2", "user"=>{"gender"=>["male", "female"], "location_range"=>77}}
+  [1m[36mUser Load (32.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (294.5ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 77], ["updated_at", "2020-01-16 07:39:07.674684"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (30.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 1003ms (Views: 7.0ms | ActiveRecord: 359.3ms | Allocations: 4037)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:39:18 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>25, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>25}}
+  [1m[36mUser Load (7.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (19.4ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 25], ["gender", "{female}"], ["updated_at", "2020-01-16 07:39:19.007588"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 156ms (Views: 1.0ms | ActiveRecord: 33.6ms | Allocations: 3905)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:41:12 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>123, "gender"=>["male", "female"], "id"=>"2", "user"=>{"gender"=>["male", "female"], "location_range"=>123}}
+  [1m[36mUser Load (79.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (16.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (39.6ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 123], ["gender", "{male,female}"], ["updated_at", "2020-01-16 07:41:12.403198"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (26.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 325ms (Views: 2.7ms | ActiveRecord: 163.5ms | Allocations: 3915)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 02:41:44 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 433ms (Views: 2.0ms | ActiveRecord: 26.3ms | Allocations: 970)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:41:52 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>10}}
+  [1m[36mUser Load (18.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 10], ["gender", "{female}"], ["updated_at", "2020-01-16 07:41:52.865666"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 271ms (Views: 0.5ms | ActiveRecord: 31.7ms | Allocations: 3907)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:49:17 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>34, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>34}}
+  [1m[36mUser Load (49.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (32.7ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 34], ["gender", "{male}"], ["updated_at", "2020-01-16 07:49:19.491494"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (24.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 250ms (Views: 4.0ms | ActiveRecord: 108.3ms | Allocations: 4036)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:49:58 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>142, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>142}}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (9.7ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 142], ["updated_at", "2020-01-16 07:49:58.802180"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 147ms (Views: 3.8ms | ActiveRecord: 26.3ms | Allocations: 3888)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:50:32 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>184, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>184}}
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 184], ["gender", "{female}"], ["updated_at", "2020-01-16 07:50:32.945399"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 132ms (Views: 3.8ms | ActiveRecord: 24.7ms | Allocations: 3902)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:51:25 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "id"=>"2", "user"=>{"location_range"=>10}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 10], ["updated_at", "2020-01-16 07:51:25.363560"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (29.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 182ms (Views: 5.5ms | ActiveRecord: 35.6ms | Allocations: 3846)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:53:07 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>20, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>20}}
+  [1m[36mUser Load (29.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (32.7ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 20], ["updated_at", "2020-01-16 07:53:07.412787"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (33.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 262ms (Views: 15.7ms | ActiveRecord: 97.0ms | Allocations: 3888)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:57:57 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>32, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>32}}
+  [1m[36mUser Load (15.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (50.9ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 32], ["updated_at", "2020-01-16 07:57:58.186311"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (17.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 296ms (Views: 8.5ms | ActiveRecord: 89.2ms | Allocations: 3888)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 02:58:08 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>200, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>200}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (26.9ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 200], ["gender", "{male}"], ["updated_at", "2020-01-16 07:58:08.106382"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 116ms (Views: 0.8ms | ActiveRecord: 34.4ms | Allocations: 3902)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 03:00:52 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>21, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>21}}
+  [1m[36mUser Load (78.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (30.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (20.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (631.7ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 21], ["gender", "{female}"], ["updated_at", "2020-01-16 08:00:52.900791"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (39.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 952ms (Views: 9.6ms | ActiveRecord: 800.7ms | Allocations: 3907)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 03:06:51 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>29, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>29}}
+  [1m[36mUser Load (65.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (11.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (37.4ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 29], ["updated_at", "2020-01-16 08:06:54.977069"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (23.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 296ms (Views: 2.9ms | ActiveRecord: 143.5ms | Allocations: 4022)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 03:08:18 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>14, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>14}}
+  [1m[36mUser Load (207.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (30.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (50.7ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 14], ["gender", "{male}"], ["updated_at", "2020-01-16 08:08:18.914639"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (23.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 1985ms (Views: 5.6ms | ActiveRecord: 313.9ms | Allocations: 3910)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 03:12:59 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (33.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 700ms (Views: 11.9ms | ActiveRecord: 33.3ms | Allocations: 964)
+
+
+  [1m[36mUser Load (12.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreed Load (9.9ms)[0m  [1m[34mSELECT "breeds".* FROM "breeds" WHERE "breeds"."user_id" = $1 LIMIT $2[0m  [["user_id", "2"], ["LIMIT", 11]]
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6286293722172414930)[0m
+  [1m[35m (9.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (21.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6286293722172414930)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6286293722172414930)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (13.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6286293722172414930)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started PUT "/users/2" for ::1 at 2020-01-16 04:00:33 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>102, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>102}}
+  [1m[36mUser Load (21.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 72ms (Views: 1.3ms | ActiveRecord: 42.6ms | Allocations: 6730)
+
+
+Started POST "/users/login" for ::1 at 2020-01-16 04:01:02 -0500
+Processing by UsersController#login as HTML
+  Parameters: {"username"=>"phil", "password"=>"[FILTERED]", "user"=>{"username"=>"phil"}}
+  [1m[36mUser Load (28.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "phil"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `login'
+Completed 200 OK in 460ms (Views: 6.7ms | ActiveRecord: 28.7ms | Allocations: 1155)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 04:01:24 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>35, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>35}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (30.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (120.0ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 35], ["updated_at", "2020-01-16 09:01:24.099615"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (42.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 261ms (Views: 3.9ms | ActiveRecord: 194.3ms | Allocations: 4115)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 04:02:27 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>10}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 10], ["updated_at", "2020-01-16 09:02:27.440002"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 47ms (Views: 6.5ms | ActiveRecord: 6.8ms | Allocations: 3881)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 04:02:57 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>10, "id"=>"2", "user"=>{"location_range"=>10}}
+  [1m[36mUser Load (17.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+Completed 200 OK in 84ms (Views: 8.8ms | ActiveRecord: 18.9ms | Allocations: 1839)
+
+
+Started PUT "/users/2/breeds" for ::1 at 2020-01-16 04:02:58 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/users/2/breeds"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PUT "/users/2" for ::1 at 2020-01-16 04:19:15 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>49, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>49}}
+  [1m[36mUser Load (13.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (31.5ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "gender" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["location_range", 49], ["gender", "{female}"], ["updated_at", "2020-01-16 09:19:15.998185"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 116ms (Views: 2.0ms | ActiveRecord: 89.0ms | Allocations: 10110)
+
+
+Started PUT "/users/2/breeds/2" for ::1 at 2020-01-16 04:19:16 -0500
+  
+SyntaxError (/Users/alejandrarossetti/Documents/ga/project4/Pawsibly/Pawsibly_api/app/controllers/breeds_controller.rb:49: syntax error, unexpected ')', expecting =>
+...ams.permit(names: [], :user_id)
+...                              ^):
+  
+app/controllers/breeds_controller.rb:49: syntax error, unexpected ')', expecting =>
+app/controllers/breeds_controller.rb:49: syntax error, unexpected ')', expecting =>
+Started PUT "/users/2" for ::1 at 2020-01-16 04:20:27 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>51, "gender"=>["female"], "id"=>"2", "user"=>{"gender"=>["female"], "location_range"=>51}}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (0.6ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 51], ["updated_at", "2020-01-16 09:20:27.573365"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 39ms (Views: 1.7ms | ActiveRecord: 14.8ms | Allocations: 9160)
+
+
+Started PUT "/users/2/breeds/2" for ::1 at 2020-01-16 04:20:27 -0500
+Processing by BreedsController#update as HTML
+  Parameters: {"user_id"=>"2", "id"=>"2", "breed"=>{"user_id"=>"2"}}
+  [1m[36mBreed Load (52.2ms)[0m  [1m[34mSELECT "breeds".* FROM "breeds" WHERE "breeds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breeds_controller.rb:44:in `set_breed'
+[31mUnpermitted parameters: :id, :breed[0m
+Completed 422 Unprocessable Entity in 108ms (Views: 0.9ms | ActiveRecord: 79.0ms | Allocations: 6007)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 04:21:25 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>51, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>51}}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (2.0ms)[0m  [1m[33mUPDATE "users" SET "gender" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["gender", "{male}"], ["updated_at", "2020-01-16 09:21:25.601378"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 77ms (Views: 11.8ms | ActiveRecord: 9.9ms | Allocations: 3869)
+
+
+Started PUT "/users/2/breeds/2" for ::1 at 2020-01-16 04:21:25 -0500
+Processing by BreedsController#update as HTML
+  Parameters: {"user_id"=>"2", "id"=>"2", "breed"=>{"user_id"=>"2"}}
+  [1m[36mBreed Load (41.7ms)[0m  [1m[34mSELECT "breeds".* FROM "breeds" WHERE "breeds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breeds_controller.rb:44:in `set_breed'
+[31mUnpermitted parameters: :id, :breed[0m
+Completed 422 Unprocessable Entity in 54ms (Views: 0.3ms | ActiveRecord: 41.7ms | Allocations: 1199)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 04:22:22 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>27, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>27}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `get_current_user'
+[31mUnpermitted parameters: :id, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[36mUser Update (4.2ms)[0m  [1m[33mUPDATE "users" SET "location_range" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["location_range", 27], ["updated_at", "2020-01-16 09:22:22.994700"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:43:in `update'
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:43:in `update'
+Completed 200 OK in 70ms (Views: 3.9ms | ActiveRecord: 11.3ms | Allocations: 3861)
+
+
+Started PUT "/users/2/breeds/2" for ::1 at 2020-01-16 04:22:23 -0500
+Processing by BreedsController#update as HTML
+  Parameters: {"user_id"=>"2", "id"=>"2", "breed"=>{}}
+  [1m[36mBreed Load (44.6ms)[0m  [1m[34mSELECT "breeds".* FROM "breeds" WHERE "breeds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breeds_controller.rb:44:in `set_breed'
+[31mUnpermitted parameters: :id, :breed[0m
+Completed 422 Unprocessable Entity in 60ms (Views: 0.4ms | ActiveRecord: 44.6ms | Allocations: 1201)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 04:35:25 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>34, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>34}}
+  [1m[36mUser Load (30.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 103ms (Views: 3.9ms | ActiveRecord: 98.7ms | Allocations: 6730)
+
+
+Started PUT "/users/2/breeds/2" for ::1 at 2020-01-16 04:35:26 -0500
+Processing by BreedsController#update as HTML
+  Parameters: {"user_id"=>"2", "id"=>"2", "breed"=>{}}
+  [1m[36mBreed Load (0.5ms)[0m  [1m[34mSELECT "breeds".* FROM "breeds" WHERE "breeds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breeds_controller.rb:44:in `set_breed'
+[31mUnpermitted parameters: :id, :breed[0m
+Completed 422 Unprocessable Entity in 201ms (Views: 0.3ms | ActiveRecord: 42.6ms | Allocations: 6129)
+
+
+Started PUT "/users/2" for ::1 at 2020-01-16 04:36:16 -0500
+Processing by UsersController#update as HTML
+  Parameters: {"location_range"=>36, "gender"=>["male"], "id"=>"2", "user"=>{"gender"=>["male"], "location_range"=>36}}
+  [1m[36mUser Load (10.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58:in `set_user'
+Filter chain halted as :authenticate_token rendered or redirected
+Completed 200 OK in 54ms (Views: 3.1ms | ActiveRecord: 10.2ms | Allocations: 808)
+
+
+Started PUT "/users/2/breeds/2" for ::1 at 2020-01-16 04:36:16 -0500
+Processing by BreedsController#update as HTML
+  Parameters: {"user_id"=>"2", "id"=>"2", "breed"=>{"user_id"=>"2"}}
+  [1m[36mBreed Load (3.4ms)[0m  [1m[34mSELECT "breeds".* FROM "breeds" WHERE "breeds"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/breeds_controller.rb:44:in `set_breed'
+[31mUnpermitted parameters: :id, :breed[0m
+Completed 422 Unprocessable Entity in 26ms (Views: 0.6ms | ActiveRecord: 3.4ms | Allocations: 1202)
+
+
+  [1m[35m (17.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6286293722172414930)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddZipcodeToUsers (20200116093710)
+  [1m[35m (7.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (95.0ms)[0m  [1m[35mALTER TABLE "users" ADD "zipcode" integer[0m
+  [1m[36mprimary::SchemaMigration Create (6.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200116093710"]]
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (18.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6286293722172414930)[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users/register" for ::1 at 2020-01-16 04:44:20 -0500
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#register as HTML
+  Parameters: {"username"=>"xag", "password"=>"[FILTERED]", "user"=>{"username"=>"xag"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[36mUser Create (62.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "xag"], ["password_digest", "$2a$12$kq.lrfYo4To2v0fCdZa3cOhbQwu8NkwcmcaO7yFXfasQXgQLHtd3K"], ["created_at", "2020-01-16 09:44:21.387833"], ["updated_at", "2020-01-16 09:44:21.387833"]]
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+Completed 201 Created in 507ms (Views: 4.9ms | ActiveRecord: 120.4ms | Allocations: 8991)
+
+
+Started POST "/users/register" for ::1 at 2020-01-16 04:54:47 -0500
+Processing by UsersController#register as HTML
+  Parameters: {"username"=>"1234", "password"=>"[FILTERED]", "user"=>{"username"=>"1234"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[36mUser Create (91.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "1234"], ["password_digest", "$2a$12$Qw2Lso0SeEl55lBwAkeAUuxJjWZ8RexbS3NUitYpI/A/o2ObQEUT6"], ["created_at", "2020-01-16 09:54:49.614980"], ["updated_at", "2020-01-16 09:54:49.614980"]]
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[35m (24.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+Completed 201 Created in 691ms (Views: 14.9ms | ActiveRecord: 116.5ms | Allocations: 2584)
+
+
+Started POST "/users/register" for ::1 at 2020-01-16 04:56:16 -0500
+Processing by UsersController#register as HTML
+  Parameters: {"username"=>"12345", "password"=>"[FILTERED]", "user"=>{"username"=>"12345"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "12345"], ["password_digest", "$2a$12$QcuBnlAZsr3By0zXZqlk4.IpO1puOQ7d4CUN381zcEjWuXyL66Q.."], ["created_at", "2020-01-16 09:56:16.877820"], ["updated_at", "2020-01-16 09:56:16.877820"]]
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+Completed 201 Created in 462ms (Views: 6.3ms | ActiveRecord: 10.5ms | Allocations: 2570)
+
+
+Started POST "/users/6/breeds" for ::1 at 2020-01-16 04:56:16 -0500
+Processing by BreedsController#create as HTML
+  Parameters: {"user_id"=>"6", "names"=>[], "breed"=>{"names"=>[], "user_id"=>"6"}}
+[31mUnpermitted parameter: :breed[0m
+Completed 422 Unprocessable Entity in 244ms (Views: 0.5ms | ActiveRecord: 202.1ms | Allocations: 5373)
+
+
+  [1m[35m (12.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6286293722172414930)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (7.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6286293722172414930)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users/register" for ::1 at 2020-01-16 05:05:13 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#register as HTML
+  Parameters: {"username"=>"555", "password"=>"[FILTERED]", "zipcode"=>"555", "user"=>{"username"=>"555", "zipcode"=>"555"}}
+[31mUnpermitted parameters: :zipcode, :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[36mUser Create (32.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "555"], ["password_digest", "$2a$12$9zwYdLKmG3Lzywl/f0n3v.8Hsw22Aj8e/HqaUAAtpfcjYR3o8AI8O"], ["created_at", "2020-01-16 10:05:14.653804"], ["updated_at", "2020-01-16 10:05:14.653804"]]
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+Completed 201 Created in 458ms (Views: 3.3ms | ActiveRecord: 63.7ms | Allocations: 8973)
+
+
+Started POST "/users/7/breeds" for ::1 at 2020-01-16 05:05:14 -0500
+Processing by BreedsController#create as HTML
+  Parameters: {"user_id"=>"7", "names"=>[], "breed"=>{"names"=>[], "user_id"=>"7"}}
+[31mUnpermitted parameter: :breed[0m
+Completed 422 Unprocessable Entity in 24ms (Views: 0.3ms | ActiveRecord: 34.6ms | Allocations: 5395)
+
+
+Started POST "/users/register" for ::1 at 2020-01-16 05:07:43 -0500
+Processing by UsersController#register as HTML
+  Parameters: {"username"=>"555", "password"=>"[FILTERED]", "zipcode"=>"555", "user"=>{"username"=>"555", "zipcode"=>"555"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (6.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[36mUser Create (27.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "555"], ["password_digest", "$2a$12$7SAyFmWXLh6ZEe34Uojs9OemxPwq1xM5PgjQ0DmS8aIymtT0JSel6"], ["created_at", "2020-01-16 10:07:44.173870"], ["updated_at", "2020-01-16 10:07:44.173870"], ["zipcode", 555]]
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+Completed 201 Created in 430ms (Views: 4.0ms | ActiveRecord: 103.7ms | Allocations: 8310)
+
+
+Started POST "/users/8/breeds" for ::1 at 2020-01-16 05:07:44 -0500
+Processing by BreedsController#create as HTML
+  Parameters: {"user_id"=>"8", "names"=>[], "breed"=>{"names"=>[], "user_id"=>"8"}}
+[31mUnpermitted parameter: :breed[0m
+Completed 422 Unprocessable Entity in 14ms (Views: 0.2ms | ActiveRecord: 8.7ms | Allocations: 3529)
+
+
+Started POST "/users/register" for ::1 at 2020-01-16 05:08:26 -0500
+Processing by UsersController#register as HTML
+  Parameters: {"username"=>"555", "password"=>"[FILTERED]", "zipcode"=>"555", "user"=>{"username"=>"555", "zipcode"=>"555"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "555"], ["password_digest", "$2a$12$RY94wPrI1Q9a1/9CHeNOJ.Of4bdrXXLRh89cYfu.krbveNUICSgtm"], ["created_at", "2020-01-16 10:08:26.513683"], ["updated_at", "2020-01-16 10:08:26.513683"], ["zipcode", 555]]
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[35m (10.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+Completed 201 Created in 421ms (Views: 5.6ms | ActiveRecord: 12.1ms | Allocations: 2586)
+
+
+Started POST "/users/9/breeds" for ::1 at 2020-01-16 05:08:26 -0500
+Processing by BreedsController#create as HTML
+  Parameters: {"user_id"=>"9", "names"=>[], "breed"=>{"names"=>[], "user_id"=>"9"}}
+[31mUnpermitted parameter: :breed[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 692)
+
+
+Started POST "/users/register" for ::1 at 2020-01-16 05:08:49 -0500
+Processing by UsersController#register as HTML
+  Parameters: {"username"=>"523", "password"=>"[FILTERED]", "zipcode"=>"111", "user"=>{"username"=>"523", "zipcode"=>"111"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[36mUser Create (2.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "523"], ["password_digest", "$2a$12$fO7BPWUO.Aa71YJVUqcqNOE63wzisnhvCBAtL/7fmyqk37fbQb3ay"], ["created_at", "2020-01-16 10:08:49.751676"], ["updated_at", "2020-01-16 10:08:49.751676"], ["zipcode", 111]]
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+Completed 201 Created in 438ms (Views: 4.0ms | ActiveRecord: 9.6ms | Allocations: 2587)
+
+
+Started POST "/users/10/breeds" for ::1 at 2020-01-16 05:08:49 -0500
+Processing by BreedsController#create as HTML
+  Parameters: {"user_id"=>"10", "names"=>[], "breed"=>{"names"=>[], "user_id"=>"10"}}
+[31mUnpermitted parameter: :breed[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 692)
+
+
+Started POST "/users/register" for ::1 at 2020-01-16 05:16:28 -0500
+Processing by UsersController#register as HTML
+  Parameters: {"username"=>"xagr1", "password"=>"[FILTERED]", "zipcode"=>"11217", "user"=>{"username"=>"xagr1", "zipcode"=>"11217"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[36mUser Create (63.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at", "zipcode") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "xagr1"], ["password_digest", "$2a$12$4DE6BXIlmfNjmUCz3P5BiOawpiRMjonMZXo/iLFPV1IUeYdGlNiLu"], ["created_at", "2020-01-16 10:16:30.008903"], ["updated_at", "2020-01-16 10:16:30.008903"], ["zipcode", 11217]]
+  ↳ app/controllers/users_controller.rb:22:in `register'
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:22:in `register'
+Completed 201 Created in 490ms (Views: 1.7ms | ActiveRecord: 67.0ms | Allocations: 8281)
+
+
+Started POST "/users/11/breeds" for ::1 at 2020-01-16 05:16:30 -0500
+Processing by BreedsController#create as HTML
+  Parameters: {"user_id"=>"11", "names"=>[], "breed"=>{"names"=>[], "user_id"=>"11"}}
+[31mUnpermitted parameter: :breed[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 3488)
+
+

@@ -8,20 +8,24 @@ import {
     RefreshControl,
     Platform,
     TouchableOpacity,
-    AsyncStorage
+    AsyncStorage,
+    LayoutAnimation,
+    UIManager
 } from 'react-native'
 import { White, Primary, Background, Accent } from '../../colors'
 import LoginRegisterInput from '../../components/shared/LoginRegisterInput'
-import { LoginMethod, RegisterMethod } from '../../services/ApiMethods'
+import { LoginMethod, RegisterMethod, initializeUserBreed } from '../../services/ApiMethods'
 
 export default class Login extends Component {
     state = {
         username: '',
         password: '',
         confirmPassword: '',
+        zipCode: 11111,
         loginToggled: false,
         error: false,
-        user: {}
+        user: {},
+        items: false
     }
 
     handleTextChange = (name, value) => {
@@ -32,31 +36,41 @@ export default class Login extends Component {
         this.state.loginToggled === false ? this.handleLogin() : this.handleRegister()
     }
 
-    handleLogin = async () => {
-        const resp = await LoginMethod(this.state.username, this.state.password)
-        if (resp) {
-            try {
-                await AsyncStorage.setItem('userToken', resp.data.token)
-                .then(
-                await AsyncStorage.setItem('userData', resp.data.user)
-                ).then(
-                this.setState({ user: resp.data.user })
-                ).finally(
-                this.props.navigation.navigate('Home')
-                );
-            } catch (error) {
-                console.log(error)
-            }
+    storeInAsyncStorage = async (key, data) => {
+        try {
+            await AsyncStorage.setItem(key, data);
+        } catch (error) {
+            console.log(error)
         }
-
     }
 
+    handleLogin = async () => {
+        try {
+            const resp = await LoginMethod(this.state.username, this.state.password)
+
+            this.storeInAsyncStorage('userData', JSON.stringify(resp.data.user))
+            this.storeInAsyncStorage('userToken', resp.data.token)
+
+            console.log('stored your token!', await AsyncStorage.getItem('userToken'))
+            console.log('stored your data!', await AsyncStorage.getItem('userData'))
+
+            this.props.navigation.navigate('Home')
+        } catch (error) {
+            console.log(error)
+        }
+    }
 
     handleRegister = async () => {
+        const { username, password, confirmPassword, zipCode } = this.state
+
         if (this.state.username.length >= 3 && this.state.password.length >= 3) {
             if (this.state.password === this.state.confirmPassword) {
-                const resp = await RegisterMethod(this.state.username, this.state.password, this.state.confirmPassword)
-                console.log(resp.data)
+                const resp = await RegisterMethod(
+                   username, 
+                   password, 
+                   zipCode
+                )
+                await initializeUserBreed(resp.data.id)
             }
         }
     }
@@ -75,6 +89,7 @@ export default class Login extends Component {
                     <Text>Username:</Text>
                     <LoginRegisterInput
                         name='username'
+                        textContentType='username'
                         value={this.state.username}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
@@ -82,6 +97,7 @@ export default class Login extends Component {
                     <LoginRegisterInput
                         name='password'
                         value={this.state.password}
+                        typeOfInput='password'
                         checkPassword={true}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
@@ -102,12 +118,14 @@ export default class Login extends Component {
                     <Text>Username:</Text>
                     <LoginRegisterInput
                         name='username'
+                        textContentType='username'
                         value={this.state.username}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
                     <Text>Password:</Text>
                     <LoginRegisterInput
                         name='password'
+                        typeOfInput='password'
                         value={this.state.password}
                         checkPassword={true}
                         onChangeText={this.handleTextChange}>
@@ -115,8 +133,16 @@ export default class Login extends Component {
                     <Text>Confirm Password:</Text>
                     <LoginRegisterInput
                         name='confirmPassword'
+                        typeOfInput='password'
                         value={this.state.confirmPassword}
                         checkPassword={true}
+                        onChangeText={this.handleTextChange}>
+                    </LoginRegisterInput>
+                    <Text>Zipcode:</Text>
+                    <LoginRegisterInput
+                        name='zipCode'
+                        typeOfInput='postalCode'
+                        value={this.state.zipCode}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
                     <TouchableOpacity onPress={this.handleSubmit} style={[styles.button]}>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users do
-    resources :breeds, only: [:index, :create, :update, :destroy]
+    resources :breeds
   end
   resources :users do
     collection do

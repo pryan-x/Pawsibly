@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 import { Primary, Secondary } from '../../colors'
 
-export default ({ onChangeText, value, name, checkPassword }) => {
+export default ({ onChangeText, value, name, checkPassword, typeOfInput}) => {
 
     const nameCapitalized = name.slice(0,1).toUpperCase() + name.slice(1, name.length);
 
@@ -12,6 +12,7 @@ export default ({ onChangeText, value, name, checkPassword }) => {
             style={styles.input}
             name={name} 
             value={value} 
+            textContentType={typeOfInput}
             secureTextEntry={checkPassword}
             onChangeText={(text) => onChangeText(name, text)} 
             placeholder={`Enter your ${nameCapitalized}`}

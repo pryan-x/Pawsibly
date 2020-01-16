@@ -27,7 +27,6 @@ class UsersController < ApplicationController
   end
   
   def login
-    puts params
     # puts params[:password]
     @user = User.find_by(username: params[:username])
     if @user && @user.authenticate(params[:password])
@@ -40,10 +39,11 @@ class UsersController < ApplicationController
 
   # PATCH/PUT /users/1
   def update
+    puts 'youmadeit!'
     if @user.update(user_params)
       render json: @user
     else
-      render json: @user.errors, status: :unprocessable_entity
+      render json: { status: 401, message: "Unauthorized" }
     end
   end
 
@@ -60,7 +60,7 @@ class UsersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_params
-      params.permit(:username, :password, :age_bottom, :age_top, :gender, :location_range)
+      params.permit(:username, :password, :age_bottom, :age_top, :location_range, :zipcode, gender: [])
     end
 
     def create_token(id, username)

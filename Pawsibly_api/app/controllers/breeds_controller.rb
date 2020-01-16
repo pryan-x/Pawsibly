@@ -24,7 +24,7 @@ class BreedsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /breeds/1
+  # PATCH/PUT /breeds/
   def update
     if @breed.update(breed_params)
       render json: @breed
@@ -41,12 +41,12 @@ class BreedsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_breed
-      @breed = Breed.find(params[:id])
+      @breed = Breed.find(params[:user_id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def breed_params
-      params.require(:breed).permit(:name, :user_id)
+      params.permit(:user_id, names: [])
       # MAYBE THIS IS ISSUE
     end
 end

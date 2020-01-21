@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 import { Primary, Secondary } from '../../colors'
 
-export default ({ onChangeText, value, name, checkPassword, typeOfInput}) => {
+export default ({ onChangeText, value, name, checkPassword, textContentType, numberpad}) => {
 
     const nameCapitalized = name.slice(0,1).toUpperCase() + name.slice(1, name.length);
 
@@ -11,10 +11,11 @@ export default ({ onChangeText, value, name, checkPassword, typeOfInput}) => {
             <TextInput 
             style={styles.input}
             name={name} 
-            value={value} 
-            textContentType={typeOfInput}
+            value={String(value)} 
+            textContentType={textContentType}
             secureTextEntry={checkPassword}
-            onChangeText={(text) => onChangeText(name, text)} 
+            keyboardType={numberpad ? numberpad : 'default'}
+            onChangeText={(e) => onChangeText(name, e)} 
             placeholder={`Enter your ${nameCapitalized}`}
             placeholderTextColor='grey'
             // onEndEditing
@@ -25,11 +26,17 @@ export default ({ onChangeText, value, name, checkPassword, typeOfInput}) => {
 
 const styles = StyleSheet.create({
     inputWrapper: {
-        borderColor: '#000000',
-
-        borderWidth: 2
+        borderColor: '#8096D8',
+        backgroundColor: '#ECE5FF',
+        borderWidth: 1,
+        padding: 5,
+        marginVertical: 15,
+        marginHorizontal: '8%',
+        borderRadius: 6
     },
     input: {
-        color: '#000000'
+        backgroundColor: '#ECE5FF38',
+        color: '#4D4D4D',
+        fontSize: 24
     }
 })

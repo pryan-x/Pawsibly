@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
   resources :users do
-    resources :breeds
+    collection do
+      put "/:user_id/breeds", to: "breeds#update"
+      delete "/:user_id/breeds", to: "breeds#destroy"
+    end
+    resources :breeds do
+    end
   end
+
+
   resources :users do
     collection do
       post "/login", to: "users#login"

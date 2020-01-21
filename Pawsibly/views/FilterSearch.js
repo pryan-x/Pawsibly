@@ -12,12 +12,13 @@ import {
     Button,
     TouchableOpacity,
     AsyncStorage,
+    ImageBackground
 } from 'react-native'
 import MultiSelect from '../components/MultiSelect'
 import Slider from "@brlja/react-native-slider";
 import { updateUser, updateUserBreeds } from '../services/ApiMethods'
 
-const maxBreeds = 8
+const maxBreeds = 6
 
 export default class FilterSearch extends Component {
     constructor() {
@@ -27,8 +28,8 @@ export default class FilterSearch extends Component {
             user: {},
             confirmText: `0/${maxBreeds}`,
             value: 10,
-            colorMale: 'black',
-            colorFemale: 'black',
+            colorMale: '#795ACE',
+            colorFemale: '#795ACE',
             male: false,
             female: false
         };
@@ -41,10 +42,10 @@ export default class FilterSearch extends Component {
 
     onPressColorChange = (gender) => {
         if(gender === 'male') {
-            this.state.colorMale === 'black' ? this.setState({ colorMale: 'blue', male: true }) : this.setState({ colorMale: 'black', male: false });
+            this.state.colorMale === '#795ACE' ? this.setState({ colorMale: '#4C6DD0', male: true }) : this.setState({ colorMale: '#795ACE', male: false });
             
         } else {
-            this.state.colorFemale === 'black' ? this.setState({ colorFemale: 'salmon', female: true }) : this.setState({ colorFemale: 'black', female: false });
+            this.state.colorFemale === '#795ACE' ? this.setState({ colorFemale: 'salmon', female: true }) : this.setState({ colorFemale: '#795ACE', female: false });
         }
     }
 
@@ -60,6 +61,7 @@ export default class FilterSearch extends Component {
         const { navigation } = this.props
 
         let id = navigation.getParam('user').id
+        console.log(id)
         let token = await AsyncStorage.getItem('userToken')
         
         let gender = []
@@ -73,7 +75,8 @@ export default class FilterSearch extends Component {
 
         try {
             await updateUser( this.state.value, gender, id, token)
-            await updateUserBreeds( this.selectedBreeds, id )
+            console.log(this.state.selectedBreeds)
+            await updateUserBreeds( this.state.selectedBreeds, id )
             navigation.goBack()
         } catch (error) {
             console.log(error)
@@ -82,10 +85,14 @@ export default class FilterSearch extends Component {
 
     render() {
         return (
-            <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'space-between'}}>
-                <MultiSelect selectedBreeds={this.state.selectedBreeds} onSelectedItemsChange={this.onSelectedItemsChange} confirmText={this.state.confirmText}/>
+            <ImageBackground
+            source={require('../resources/dogBackground.jpg')} style={[styles.background, {width: '100%', height: '100%'}]}
+            >
+                <View style={styles.container}>
+                <MultiSelect 
+                selectedBreeds={this.state.selectedBreeds} onSelectedItemsChange={this.onSelectedItemsChange}confirmText={this.state.confirmText}/>
     
-                <View >
+                <View style={{marginVertical: 25}}>
                     <Text style={[styles.text]}>Show dogs in the radius of: </Text>
                     {/* <Slider
                         style={{width: 200, height: 40}}
@@ -94,7 +101,7 @@ export default class FilterSearch extends Component {
                         minimumTrackTintColor="#FFFFFF"
                         maximumTrackTintColor="#000000"
                     /> */}
-                    <View style={styles.container}>
+                    <View>
                         <Slider
                             value={this.state.value}
                             minimumValue={10}
@@ -108,26 +115,34 @@ export default class FilterSearch extends Component {
               
                             onValueChange={value => this.setState({ value })}
                         />
-                        
-                    </View><Text style={styles.text}>
+                        <Text style={styles.text}>
                             {this.state.value} Miles
                         </Text>
+                    </View>
                 </View>
                 {/* <View>
                     <Text style={[styles.text]}>Show dogs from the ages: </Text>
                 </View> */}
-                <View>
-                    <Text style={[styles.text]}>Gender: </Text>
-                    <Button  value='yo' title='Male' onPress={() => {this.onPressColorChange('male')}} color={`${this.state.colorMale}`}></Button>
+                <View style={{alignItems: 'center'}}>
+                    <Text style={[styles.text, {marginTop: 5} ]}>Gender: </Text>
+                    {/* <Button style={{fontSize: 20}} value='yo' title='Male' onPress={() => {this.onPressColorChange('male')}} color={`${this.state.colorMale}`}></Button>
                     <Button title='Female' onPress={() => {this.onPressColorChange('female')}} color={`${this.state.colorFemale}`}></Button>
+                     */}
+                    <TouchableOpacity style={styles.genderToggle} onPress={() => {this.onPressColorChange(`male`)}}>
+                        <Text style={{color: `${this.state.colorMale}`, fontSize: 25, fontFamily: 'quicksandBold', textAlign: 'center'}}>Male</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.genderToggle} onPress={() => {this.onPressColorChange(`female`)}}>
+                        <Text style={{color: `${this.state.colorFemale}`, fontSize: 25, fontFamily: 'quicksandBold', textAlign: 'center'}}>Female</Text>
+                    </TouchableOpacity>
                     
                 </View>
-                <View>
+                <View style={{alignItems: 'center'}}>
                     <TouchableOpacity style={styles.button} onPress={this.saveUserFilters}>
-                        <Text>Save Filters</Text>
+                        <Text style={{color: 'white', fontSize: 25, fontFamily: 'quicksandBold'}}>Save Filters</Text>
                     </TouchableOpacity>
                 </View>
-            </View>
+                </View>
+            </ImageBackground>
         );
     }
 }
@@ -135,39 +150,42 @@ export default class FilterSearch extends Component {
 
 const styles = StyleSheet.create({
     text: {
-        textAlign: 'center'
+        textAlign: 'center',
+        color: '#9078D1',
+        fontFamily: 'quicksandBold',
+        fontSize: 25
     },
-    container: {
-        flex: 1,
-        marginLeft: 50,
-        marginRight: 50,
-        alignItems: "stretch",
-        justifyContent: "center",
-      },
-      button: {
-        alignSelf: 'stretch',
+    background: {
         alignItems: 'center',
         justifyContent: 'center',
-        borderWidth: 2,
+        // backgroundImage: 
+    },
+    container: {
+        width: '85%',
+        // height: '80%',
         borderRadius: 15,
+        paddingHorizontal: 15,
+        paddingTop: 20,
+        backgroundColor: 'rgba(244,240,255,1)',
+    },
+    button: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 10,
+        padding: 8,
+        borderColor: '#69BAC6',
+        backgroundColor: '#69BAC6',
         paddingVertical: 10,
-        marginHorizontal: 50
+        marginVertical: 33,
+        width: '70%'
+    },
+    genderToggle: {
+        marginVertical: 12,
+        paddingVertical: 8,
+        borderWidth: 1,
+        backgroundColor: 'rgba(105,186,198,.35)',
+        borderColor: 'rgba(244,240,255,1)',
+        borderRadius: 10,
+        width: '40%'
     }
 })
-
-var iosStyles = StyleSheet.create({
-    track: {
-      height: 2,
-      borderRadius: 1,
-    },
-    thumb: {
-      width: 20,
-      height: 20,
-      borderRadius: 30 / 2,
-      backgroundColor: 'white',
-      shadowColor: 'black',
-      shadowOffset: {width: 0, height: 2},
-      shadowRadius: 2,
-      shadowOpacity: 0.35,
-    }
-  });

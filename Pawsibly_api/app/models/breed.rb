@@ -1,3 +1,4 @@
 class Breed < ApplicationRecord
-    belongs_to :users
+    # has_one :user
+    # , foreign_key: :user_id
 end

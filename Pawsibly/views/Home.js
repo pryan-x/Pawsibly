@@ -10,9 +10,9 @@ import {
     TouchableOpacity,
     AsyncStorage,
     LayoutAnimation,
-    UIManager
+    UIManager,
+    ImageBackground
 } from 'react-native'
-import { NavigationEvents } from 'react-navigation'
 
 export default class Home extends Component {
     state = {
@@ -23,20 +23,11 @@ export default class Home extends Component {
         this.fetchUserData()
     }
 
-    // componentWillUnmount() {
-    //     // remove event listener
-    // }
-
-    // focusListener = () => {
-    //     this.props.navigation.addListener("didFocus",() => {
-    //     this.fetchUserData
-    //   })};
 
     fetchUserData = async () => {
         const user = await AsyncStorage.getItem('userData')
         this.setState({ user: JSON.parse(user) });
-
-        console.log('i am in home this data is from state', this.state.user)
+        console.log('i am in home this data is from state', this.state.user.id)
 
     }
 
@@ -84,9 +75,10 @@ export default class Home extends Component {
     render() {
         const { user } = this.state
         const { navigate } = this.props.navigation
-        // {this.focusListener}
         return (
-            <View style={[styles.container]}>
+            <ImageBackground
+            source={require('../resources/dogBackground.jpg')} style={[styles.background, {width: '100%', height: '100%'}]}
+            >
                 <View style={[styles.container]}>
                     <TouchableOpacity 
                         onPress={() => {
@@ -95,7 +87,7 @@ export default class Home extends Component {
                         }} 
                         style={[styles.button]}
                     >
-                        <Text>{'Narrow your search!'}</Text>
+                        <Text style={styles.text}>{'Narrow your search!'}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity 
                         onPress={() => {
@@ -104,61 +96,73 @@ export default class Home extends Component {
                         }}
                         style={[styles.button]}
                     >
-                        <Text>{'Profile Settings'}</Text>
+                        <Text style={styles.text}>{'Profile Settings'}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity 
                         onPress={() => {
-                            navigate('DogSearch', 
-                            { user: user });
-                        }} 
+                            navigate('DogList',
+                            { user: user })}}
                         style={[styles.button]}
                     >
-                        <Text>{'Search!'}</Text>
+                        <Text style={styles.text}>{'Search!'}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity 
-                        onPress={() => {
-                            navigate('UserList', 
-                            { user: user });
-                        }}
+                        // onPress={() => {
+                        //     navigate('UserList', 
+                        //     { user: user });
+                        // }}
                         style={[styles.button]}
                     >
-                        <Text>{'Your Pawsibilities'}</Text>
+                        <Text style={styles.text}>{'Your Pawsibilities'}</Text>
                     </TouchableOpacity>
                     {/* {this.renderButtons('Narrow your search!', 'Filters')}
                     {this.renderButtons('Profile Settings', 'ProfileSettings')}
                     {this.renderButtons('Search!', 'DogSearch')}
                     {this.renderButtons('Your Pawsibilities', 'UserList')}
                     {this.renderButtons('Log Out', 'LogOut')} */}
-                </View>
                 <TouchableOpacity onPress={this.logOut} style={[styles.button, styles.log_out]}>
-                    <Text>LogOut</Text>
+                    <Text style={styles.text}>Log Out</Text>
                 </TouchableOpacity>
-            </View>
+                </View>
+            </ImageBackground>
         );
     }
 }
 
 const styles = StyleSheet.create({
-    container: {
-        justifyContent: "space-around",
-        alignItems: "center",
-        color: "black",
-        flex: 1,
-        paddingVertical: 100,
-    },
-    button: {
-        alignSelf: 'stretch',
+    background: {
         alignItems: 'center',
         justifyContent: 'center',
-        borderWidth: 2,
+        // backgroundImage: 
+    },
+    container: {
+        width: '85%',
         borderRadius: 15,
+        paddingHorizontal: 15,
+        paddingTop: 20,
+        backgroundColor: 'rgba(244,240,255,0.85)',
+        justifyContent: "space-around",
+        alignItems: `center`,
+    },
+    button: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 10,
+        padding: 8,
+        borderColor: '#69BAC6',
+        backgroundColor: '#69BAC6',
         paddingVertical: 10,
-        marginHorizontal: 50
+        marginVertical: 20,
+        width: '80%'
     },
     log_out: {
+        marginTop: 80,
         marginBottom: 100
     },
     text: {
-        textAlign: 'center'
+        fontFamily: 'quicksandBold',
+        textAlign: 'center',
+        color: 'white',
+        fontSize: 28
     }
 })

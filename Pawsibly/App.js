@@ -9,12 +9,15 @@ import {
   TouchableOpacity,
   AsyncStorage
 } from "react-native";
+import * as Font from 'expo-font';
 import { Spinner } from './components/shared/Spinner'
 import { Primary } from './colors/index'
 import { createStackNavigator } from "react-navigation-stack";
 import { RotationGestureHandler } from "react-native-gesture-handler";
 import Login from "./views/login/Login";
 import HomeStack from "./navigators/HomeStack"
+import LogoTitle from './components/shared/LogoTitle'
+
 
 class AuthLoadingScreen extends React.Component {
   constructor() {
@@ -23,17 +26,17 @@ class AuthLoadingScreen extends React.Component {
   }
   // Fetch the token from storage then navigate to our appropriate place
   _bootstrapAsync = async () => {
-      try {
+    try {
       const userToken = await AsyncStorage.getItem("userToken")
       console.log('i am in app', userToken)
       // This will switch to the App screen or Auth screen and this loading
       // screen will be unmounted and thrown away.
       this.props.navigation.navigate(userToken ? "HomeStack" : "Auth")
-    //   this.props.navigation.navigate(userToken ? "Auth" : "HomeStack")
-      } catch (error) {
-          console.log(error)
-      }
-    };
+      //   this.props.navigation.navigate(userToken ? "Auth" : "HomeStack")
+    } catch (error) {
+      console.log(error)
+    }
+  };
   // Render any loading content that you like here
   render() {
     return (
@@ -47,12 +50,19 @@ class AuthLoadingScreen extends React.Component {
 
 const AuthStack = createStackNavigator(
   {
-    Login: Login
-  },
-  {
-    initialRouteName: "Login"
+    Login: {
+      screen: Login,
+      navigationOptions: () => ({
+        headerTitle: <LogoTitle/>,
+        headerStyle: {
+          backgroundColor: '#F4F0FF',
+        },
+      }),
+      
+    },
   }
 );
+
 
 const AppContainer = createAppContainer(
   createSwitchNavigator(
@@ -62,12 +72,27 @@ const AppContainer = createAppContainer(
       HomeStack: HomeStack
     },
     {
-      initialRouteName: "AuthLoading"
-    }
+    navigationOptions: () => ({
+      headerTitle: <LogoTitle/>,
+
+    })
+    },
+
+    // {navigationOptions = {
+
+    // }}, 
   )
 );
 
 export default class App extends Component {
+
+  componentDidMount = async () => {
+    await Font.loadAsync({
+      'quicksand': require('./assets/fonts/QuicksandRegular.otf'),
+      'quicksandBold': require('./assets/fonts/QuicksandBold.otf'),
+    });
+  }
+
   render() {
     return <AppContainer />
   }

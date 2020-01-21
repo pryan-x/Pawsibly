@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Breed.create([
-    {names: ['yorkshire', 'pitbull'], user_id: 1}
-])
+# Breed.create([
+#     {breed_list: [1, 2], user_id: 20}
+# ])

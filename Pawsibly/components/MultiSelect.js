@@ -50,6 +50,11 @@ export default class MultiSelect extends Component {
                 selectedItems={selectedBreeds}
                 showDropDowns={false}
                 confirmText={`Confirm - ${this.props.confirmText}`}
+                colors={
+                    {primary:'#69BAC6'}
+                }
+                
+                
             />
         </View>
         );

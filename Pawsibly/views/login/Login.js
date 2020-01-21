@@ -10,7 +10,8 @@ import {
     TouchableOpacity,
     AsyncStorage,
     LayoutAnimation,
-    UIManager
+    UIManager,
+    ImageBackground
 } from 'react-native'
 import { White, Primary, Background, Accent } from '../../colors'
 import LoginRegisterInput from '../../components/shared/LoginRegisterInput'
@@ -21,11 +22,8 @@ export default class Login extends Component {
         username: '',
         password: '',
         confirmPassword: '',
-        zipCode: 11111,
+        zipCode: '',
         loginToggled: false,
-        error: false,
-        user: {},
-        items: false
     }
 
     handleTextChange = (name, value) => {
@@ -48,7 +46,7 @@ export default class Login extends Component {
         try {
             const resp = await LoginMethod(this.state.username, this.state.password)
 
-            this.storeInAsyncStorage('userData', JSON.stringify(resp.data.user))
+            this.storeInAsyncStorage('userData', resp.data.user)
             this.storeInAsyncStorage('userToken', resp.data.token)
 
             console.log('stored your token!', await AsyncStorage.getItem('userToken'))
@@ -65,12 +63,27 @@ export default class Login extends Component {
 
         if (this.state.username.length >= 3 && this.state.password.length >= 3) {
             if (this.state.password === this.state.confirmPassword) {
-                const resp = await RegisterMethod(
+                try {
+                await RegisterMethod(
                    username, 
                    password, 
-                   zipCode
+                   parseInt(zipCode)
                 )
-                await initializeUserBreed(resp.data.id)
+
+                const resp = await LoginMethod(username, password)
+
+                await initializeUserBreed(JSON.parse(resp.data.user).id)
+
+                this.storeInAsyncStorage('userData', resp.data.user)
+                this.storeInAsyncStorage('userToken', resp.data.token)
+
+                console.log('stored your token!', await AsyncStorage.getItem('userToken'))
+                console.log('stored your data!', await AsyncStorage.getItem('userData'))
+
+                this.props.navigation.navigate('Home')
+                } catch (error) {
+                    console.log(error)
+                }
             }
         }
     }
@@ -85,24 +98,24 @@ export default class Login extends Component {
         if (this.state.loginToggled === false) {
             return (
                 <View>
-                    <Text>Login</Text>
-                    <Text>Username:</Text>
+                    <Text style={[styles.text, {textAlign: 'center', margin: 25}]}>Login</Text>
+                    <Text style={styles.text}>Username:</Text>
                     <LoginRegisterInput
                         name='username'
                         textContentType='username'
                         value={this.state.username}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
-                    <Text>Password:</Text>
+                    <Text style={styles.text}>Password:</Text>
                     <LoginRegisterInput
                         name='password'
                         value={this.state.password}
-                        typeOfInput='password'
+                        textContentType='password'
                         checkPassword={true}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
                     <TouchableOpacity onPress={this.handleSubmit} style={[styles.button]}>
-                        <Text>{this.state.loginToggled === false ? 'Login' : 'Register'}</Text>
+                        <Text style={styles.toggleButtonText}>{this.state.loginToggled === false ? 'Login' : 'Register'}</Text>
                     </TouchableOpacity>
                 </View>
             )
@@ -113,40 +126,41 @@ export default class Login extends Component {
         if (this.state.loginToggled === true) {
             return (
                 <View>
-                    <Text>Register</Text>
+                    <Text style={[styles.text, {textAlign: 'center', margin: 25}]}>Register</Text>
 
-                    <Text>Username:</Text>
+                    <Text style={styles.text}>Username:</Text>
                     <LoginRegisterInput
                         name='username'
                         textContentType='username'
                         value={this.state.username}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
-                    <Text>Password:</Text>
+                    <Text style={styles.text}>Password:</Text>
                     <LoginRegisterInput
                         name='password'
-                        typeOfInput='password'
+                        textContentType='password'
                         value={this.state.password}
                         checkPassword={true}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
-                    <Text>Confirm Password:</Text>
+                    <Text style={styles.text}>Confirm Password:</Text>
                     <LoginRegisterInput
-                        name='confirmPassword'
-                        typeOfInput='password'
+                        name='password'
+                        textContentType='password'
                         value={this.state.confirmPassword}
                         checkPassword={true}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
-                    <Text>Zipcode:</Text>
+                    <Text style={styles.text}>Zipcode:</Text>
                     <LoginRegisterInput
-                        name='zipCode'
-                        typeOfInput='postalCode'
+                        name='zipcode'
+                        textContentType='postalCode'
+                        keyboardType='number-pad'
                         value={this.state.zipCode}
                         onChangeText={this.handleTextChange}>
                     </LoginRegisterInput>
                     <TouchableOpacity onPress={this.handleSubmit} style={[styles.button]}>
-                        <Text>{this.state.loginToggled === false ? 'Login' : 'Register'}</Text>
+                        <Text style={styles.toggleButtonText}>{this.state.loginToggled === false ? 'Login' : 'Register'}</Text>
                     </TouchableOpacity>
                 </View>
             )
@@ -155,41 +169,71 @@ export default class Login extends Component {
 
     render() {
         return (
-            <View
-            // style={styles.container}
+            <ImageBackground
+            source={require('../../resources/dogBackground.jpg')} style={[styles.background, {width: '100%', height: '100%'}]}
             >
                 <View
-                // style={styles.login_container}
+                style={styles.container}
                 >
                     {this.renderLogin()}
                     {this.renderRegister()}
-                    <Text>
-                        dont have an account? {this.state.loginToggled === false ? 'Register' : 'Login'} here
+                    <Text style={[styles.text, {textAlign: 'center', marginVertical: 8}]}>
+                        {`dont have an account? \n${this.state.loginToggled === false ? 'register' : 'login'} here`}
                     </Text>
-                    <TouchableOpacity onPress={this.handleToggle} style={[styles.button]}>
-                        <Text>{this.state.loginToggled === false ? 'Register' : 'Login'}</Text>
+                    <TouchableOpacity onPress={this.handleToggle} style={[styles.toggleButton]}>
+                        <Text style={styles.toggleButtonText}>{this.state.loginToggled === false ? 'Register' : 'Login'}</Text>
                     </TouchableOpacity>
                 </View>
-            </View>
+            </ImageBackground>
         )
     }
 }
 const styles = StyleSheet.create({
+    background: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        // backgroundImage: 
+    },
     container: {
-        flex: 1,
-        backgroundColor: Primary
+        width: '85%',
+        borderRadius: 15,
+        paddingHorizontal: 15,
+        paddingTop: 20,
+        backgroundColor: 'rgba(244,240,255,1)',
+        justifyContent: "space-around",
+        alignItems: `center`,
     },
     button: {
-        alignSelf: 'stretch',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 10,
+        padding: 6,
+        marginLeft: '50%',
+        marginRight: '15%',
+        borderColor: '#69BAC6',
+        backgroundColor: '#69BAC6'
+    },
+    toggleButton: {
         alignItems: 'center',
         justifyContent: 'center',
         borderWidth: 2,
-        borderRadius: 15,
-        paddingVertical: 10,
-        marginHorizontal: 50
+        borderRadius: 10,
+        padding: 6,
+        marginHorizontal: '30%',
+        marginTop: 8,
+        marginBottom: 30,
+        borderColor: '#69BAC6',
+        backgroundColor: '#69BAC6',
+    },
+    toggleButtonText: {
+        color: 'white',
+        fontFamily: 'quicksandBold',
+        fontSize: 20,
     },
     text: {
-        textAlign: 'center'
+        fontFamily: 'quicksandBold',
+          fontSize: 30,
+          color: '#9078D1'
     }
 })
 
